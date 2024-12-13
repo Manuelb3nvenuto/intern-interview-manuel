@@ -25,7 +25,7 @@ Your task is to create a web application using React that visually matches the e
    - Ensure the code follows best practices and includes appropriate testing.
 
 3. **Submit Your Solution**:
-   - Once you are satisfied with your implementation, submit a Pull Request (PR) to the original repository.
+   - Once you are satisfied with your implementation, open a Pull Request (PR).
    - Make sure your PR includes a clear description of your approach, any trade-offs you considered, and instructions for running your application.
 
 4. **Deadline**: You have 1 week from the date of forking this repository to complete and submit your pull request. PLEASE share the PR on your OWN repository, not on this one.
