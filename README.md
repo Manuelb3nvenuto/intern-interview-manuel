@@ -8,7 +8,7 @@ Your task is to create a web application using React that visually matches the e
 
 ## Requirements
 
-- **React Web Application**: Develop a web application using React that faithfully replicates the provided example image.
+- **React Web Application**: Develop a web application using React that is SIMILAR to the provided example. Your solution must not look exactly the same, but rather contain similar components, so you can show your creativity and originality. But still make use of menus, charts, lists or other components shown in the example.
 
 - **Nice to have enhancements**:
   - Utilize Docker or other containerization tools either in the web application or the database layer.
@@ -28,7 +28,7 @@ Your task is to create a web application using React that visually matches the e
    - Once you are satisfied with your implementation, submit a Pull Request (PR) to the original repository.
    - Make sure your PR includes a clear description of your approach, any trade-offs you considered, and instructions for running your application.
 
-4. **Deadline**: You have 1 week from the date of forking this repository to complete and submit your pull request.
+4. **Deadline**: You have 1 week from the date of forking this repository to complete and submit your pull request. PLEASE share the PR on your OWN repository, not on this one.
 
 ## Review Process
 
