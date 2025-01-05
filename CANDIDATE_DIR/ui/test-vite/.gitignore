@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# AWS Lambda specific
+function.zip
+
+# API specific
+api/node_modules/
+api/package-lock.json
+api/dist/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE specific
+.vscode/
+.idea/
