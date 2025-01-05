@@ -1,0 +1,54 @@
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #1f2937;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: none;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar button:hover {
+  background-color: #374151;
+}
+
+.sidebar button.active {
+  background-color: #4b5563;
+  font-weight: bold;
+}
+
+/* Sign Out Button */
+.sign-out {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #dc2626;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sign-out:hover {
+  background-color: #b91c1c;
+}
+
+.sign-out i {
+  font-size: 16px;
+}
