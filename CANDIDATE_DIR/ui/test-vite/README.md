@@ -38,9 +38,7 @@ Clona este repositorio en tu máquina local:
 //Copiar código
 git clone https://github.com/Manuelb3nvenuto/intern-interview-manuel.git
 
-cd test-vite-lambda/
-cd ui/
-cd test-vite/
+cd Test-vite/
 
 2. Configuración del Frontend (ui)
 Ve a la carpeta ui:
@@ -52,9 +50,12 @@ bash
 //Copiar código
 npm install
 Inicia el servidor de desarrollo:
+
 bash
 //Copiar código
+cd intern-interview-manuel/CANDIDATE_DIR/ui/test-vite 
 npm run dev
+
 Abre el navegador en la URL que se muestra (normalmente http://localhost:5173/).
 
 3. Configuración del Backend (api)
@@ -71,7 +72,13 @@ Sigue las instrucciones de la sección "Pruebas con Lambda Function URL" para ej
 
 
 📜 Descripción de la Función Lambda
-El backend se implementa como una función AWS Lambda utilizando Express y el paquete serverless-http. Las rutas disponibles son:
+
+El backend de este proyecto está implementado como una función AWS Lambda utilizando Express y Serverless HTTP. Esta arquitectura permite manejar solicitudes HTTP directamente desde Lambda sin necesidad de servidores tradicionales. El frontend se comunica con el backend a través de solicitudes HTTP a las rutas definidas en la Lambda.
+
+El archivo handler.js define las rutas utilizando Express, y la dependencia serverless-http convierte la aplicación en un manejador compatible con Lambda. Esto permite que la función Lambda procese solicitudes HTTP de manera eficiente, similar a un servidor tradicional.
+
+
+En el backend se implementa como una función AWS Lambda utilizando Express y el paquete serverless-http. Las rutas disponibles son:
 
 Rutas
 Ruta raíz (/):
@@ -100,6 +107,19 @@ json
     { "name": "Support Case Opened", "percentage": 10 }
   ]
 }
+
+Consumo desde el frontend
+El frontend puede consumir estas rutas utilizando fetch o cualquier librería HTTP como Axios. Ejemplo:
+
+fetch('https://bejowo7zhu6chrchoggisbuqyy0vnaxs.lambda-url.us-west-2.on.aws/metrics')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
+Las ventajas de la Arquitectura Serverless
+Escalabilidad automática: AWS Lambda escala automáticamente según la demanda.
+Costo eficiente: Solo pagas por las solicitudes procesadas.
+Desarrollo local sencillo: La integración con Express permite probar el backend localmente antes de desplegarlo.
 
 📝 Pruebas con Lambda Function URL
 Para probar y ejecutar la función Lambda, sigue estos pasos:
