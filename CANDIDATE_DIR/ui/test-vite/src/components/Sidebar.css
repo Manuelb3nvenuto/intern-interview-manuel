@@ -10,6 +10,17 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .logo-container h2{
+    font-size: 1.5rem;
+  }
+
   .sidebar button {
     display: block;
     width: 120px;
@@ -61,5 +72,4 @@
   .sign-out i {
     font-size: 16px;
   }
-  
 }
