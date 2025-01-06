@@ -3,7 +3,7 @@ import "./Settings.css";
 const Settings = () => {
   return (
     <div className="settings-container">
-      <h2>Settings</h2>
+      <h1>Settings</h1>
       <p>Welcome, here you can manage your preferences and application settings.</p>
     </div>
   );
